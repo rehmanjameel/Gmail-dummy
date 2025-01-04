@@ -7,15 +7,16 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:visibility="gone">
+        android:visibility="visible">
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="60dp">
+            android:layout_height="60dp"
+            android:layout_alignParentTop="true">
 
             <ImageView
                 android:id="@+id/menu"
@@ -26,7 +27,7 @@
                 android:layout_centerVertical="true"/>
 
             <com.google.android.material.textfield.TextInputLayout
-                android:layout_width="match_parent"
+                android:layout_width="250dp"
                 android:layout_height="wrap_content"
                 android:layout_toEndOf="@id/menu"
                 android:layout_marginEnd="10dp"
@@ -34,16 +35,51 @@
                 app:boxCornerRadiusBottomStart="30dp"
                 app:boxCornerRadiusTopEnd="30dp"
                 app:boxCornerRadiusTopStart="30dp"
-                android:hint="search">
+                app:startIconDrawable="@drawable/baseline_search_24"
+                >
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"/>
+                    android:layout_height="wrap_content"
+                    android:hint="search"
+                    />
             </com.google.android.material.textfield.TextInputLayout>
+
+            <ImageView
+                android:id="@+id/themeIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/baseline_light_mode_24"
+                android:padding="5dp"
+                android:layout_centerVertical="true"
+                android:layout_toStartOf="@id/moreOptions"
+                />
+
+            <ImageView
+                android:id="@+id/moreOptions"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/baseline_more_vert_24"
+                android:padding="5dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"/>
 
         </RelativeLayout>
 
-    </LinearLayout>
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+            android:id="@+id/sendMail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="10dp"
+            android:text="Compose"
+            android:textColor="@color/white"
+            app:iconTint="@color/white"
+            android:backgroundTint="@color/dark_green"
+            app:icon="@drawable/baseline_edit_square_24"/>
+
+    </RelativeLayout>
 
     <!-- Main Content -->
     <FrameLayout

@@ -8,17 +8,24 @@
     android:gravity="center"
     android:background="@color/white">
 
-    <ImageView
+    <de.hdodenhof.circleimageview.CircleImageView
         android:layout_width="72dp"
         android:layout_height="72dp"
-        android:src="@drawable/ic_launcher_foreground"
+        android:src="@drawable/profile"
         android:contentDescription="Profile Picture" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Your Name"
-        android:textColor="@android:color/white"
+        android:text="Hi, Mr. Wick!"
+        android:textColor="@android:color/black"
+        android:textSize="18sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="mrwick@gmail.com"
+        android:textColor="@android:color/black"
         android:textSize="18sp" />
 
 </LinearLayout>
