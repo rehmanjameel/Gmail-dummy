@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ComposeActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:background="@color/light_green">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:text="New Message"
+            android:layout_marginStart="10dp"
+            android:gravity="center"
+            android:textColor="?android:textColorPrimary"
+            android:textStyle="bold"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:text="-"
+            android:gravity="center"
+            android:layout_marginStart="10dp"
+            android:textColor="?android:textColorPrimary"
+            android:textStyle="bold"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:text="x"
+            android:textColor="?android:textColorPrimary"
+            android:gravity="center"
+            android:layout_marginStart="10dp"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/outline_insert_link_24"
+            android:layout_gravity="center"/>
+        <!-- Send Button -->
+        <Button
+            android:id="@+id/buttonSend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:backgroundTint="@android:color/holo_green_dark"
+            android:text="Send"
+            android:textColor="@android:color/black" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <!-- To Field -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginEnd="8dp"
+                android:text="To :"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/editTextTo"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:hint="Recipients"
+                android:inputType="textEmailAddress"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/buttonCc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="?attr/selectableItemBackground"
+                android:text="Cc" />
+
+            <TextView
+                android:id="@+id/buttonBcc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackground"
+                android:text="Bcc" />
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/editTextCc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="10dp"
+            android:hint="Cc"
+            android:inputType="text"
+            android:textSize="16sp"
+            android:visibility="gone" />
+
+        <EditText
+            android:id="@+id/editTextBcc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:hint="Bcc"
+            android:inputType="text"
+            android:textSize="16sp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:visibility="gone"/>
+
+        <!-- Subject Field -->
+        <EditText
+            android:id="@+id/editTextSubject"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:hint="Subject"
+            android:inputType="text"
+            android:textSize="16sp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            />
+
+        <!-- Toolbar -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="visible"
+            >
+
+            <!-- Undo Button -->
+            <ImageButton
+                android:id="@+id/buttonUndo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackground"
+                android:contentDescription="Undo"
+                android:padding="10dp"
+                android:src="@drawable/baseline_undo_24" />
+
+            <!-- Redo Button -->
+            <ImageButton
+                android:id="@+id/buttonRedo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackground"
+                android:contentDescription="Redo"
+                android:padding="10dp"
+                android:src="@drawable/baseline_redo_24" />
+
+            <!-- Justify -->
+            <ImageButton
+                android:id="@+id/moreHor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackground"
+                android:src="@drawable/baseline_more_horiz_24"
+                android:padding="10dp"/>
+        </LinearLayout>
+
+        <!-- Content Field -->
+        <EditText
+            android:id="@+id/editTextContent"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="top"
+            android:hint="Compose your email..."
+            android:inputType="textMultiLine"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:textSize="16sp" />
+
+        <!-- Bottom Bar -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:gravity="start|center_vertical"
+            android:orientation="horizontal">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/encryptedBT"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Encrypted"
+                app:icon="@drawable/baseline_lock_outline_24"
+                app:cornerRadius="10dp"
+                android:backgroundTint="@color/light_green"
+                android:textColor="@color/dark_green"
+                app:iconTint="@color/dark_green"
+                android:layout_toEndOf="@+id/backButton"
+                />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/signedBT"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Signed"
+                android:layout_toEndOf="@id/encryptedBT"
+                app:cornerRadius="10dp"
+                android:layout_marginStart="10dp"
+                app:icon="@drawable/baseline_key_24"
+                android:backgroundTint="@color/grey"
+                android:textColor="@color/black"
+                app:iconTint="@color/black"
+                />
+
+            <ImageView
+                android:id="@+id/moreOptions"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/baseline_more_horiz_24"
+                android:layout_gravity="center"
+                android:background="?attr/selectableItemBackground"
+                android:layout_marginStart="20dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

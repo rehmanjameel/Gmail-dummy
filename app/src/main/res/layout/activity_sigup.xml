@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
@@ -11,7 +11,12 @@
         android:id="@+id/contextLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:orientation="vertical"
+        android:layout_margin="10dp">
 
         <TextView
             android:layout_width="wrap_content"
@@ -60,6 +65,7 @@
             app:boxCornerRadiusTopEnd="10dp"
             app:boxCornerRadiusTopStart="10dp"
             android:hint="Email"
+            android:textColorHint="?android:colorControlNormal"
             android:layout_marginEnd="20dp">
 
             <com.google.android.material.textfield.TextInputEditText
@@ -96,6 +102,7 @@
             app:boxCornerRadiusTopEnd="10dp"
             app:boxCornerRadiusTopStart="10dp"
             android:hint="Firest Name"
+            android:textColorHint="?android:colorControlNormal"
             android:layout_marginEnd="20dp">
 
             <com.google.android.material.textfield.TextInputEditText
@@ -133,6 +140,7 @@
             app:boxCornerRadiusBottomEnd="10dp"
             app:boxCornerRadiusBottomStart="10dp"
             app:boxCornerRadiusTopEnd="10dp"
+            android:textColorHint="?android:colorControlNormal"
             app:boxCornerRadiusTopStart="10dp">
 
             <com.google.android.material.textfield.TextInputEditText
@@ -172,6 +180,8 @@
             app:boxCornerRadiusTopEnd="10dp"
             app:boxCornerRadiusTopStart="10dp"
             app:endIconMode="password_toggle"
+            android:textColorHint="?android:colorControlNormal"
+            app:endIconTint="?android:colorControlNormal"
             android:hint="Password">
 
             <com.google.android.material.textfield.TextInputEditText
@@ -210,6 +220,8 @@
             app:boxCornerRadiusTopEnd="10dp"
             app:boxCornerRadiusTopStart="10dp"
             app:endIconMode="password_toggle"
+            app:endIconTint="?android:colorControlNormal"
+            android:textColorHint="?android:colorControlNormal"
             android:hint="Repeat Password">
 
             <com.google.android.material.textfield.TextInputEditText
@@ -266,4 +278,4 @@
 
     </LinearLayout>
 
-</RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

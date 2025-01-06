@@ -9,4 +9,8 @@
     <item android:id="@+id/nav_bin"
         android:title="Bin"
         android:icon="@drawable/baseline_delete_outline_24" />
+
+    <item android:id="@+id/settings"
+        android:title="Settings"
+        android:icon="@drawable/baseline_settings_24" />
 </menu>

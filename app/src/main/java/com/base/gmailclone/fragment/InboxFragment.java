@@ -1,5 +1,6 @@
 package com.base.gmailclone.fragment;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -10,6 +11,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.base.gmailclone.ComposeActivity;
 import com.base.gmailclone.R;
 import com.base.gmailclone.adapter.ItemAdapter;
 import com.base.gmailclone.databinding.FragmentInboxBinding;
@@ -39,6 +41,10 @@ public class InboxFragment extends Fragment {
         adapter = new ItemAdapter(getContext(), itemList);
         binding.inboxRV.setAdapter(adapter);
 
+        binding.sendMail.setOnClickListener(v -> {
+            Intent intent = new Intent(requireActivity(), ComposeActivity.class);
+            startActivity(intent);
+        });
         // Inflate the layout for this fragment
         return binding.getRoot();
     }
