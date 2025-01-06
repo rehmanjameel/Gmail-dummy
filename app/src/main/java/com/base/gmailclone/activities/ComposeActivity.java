@@ -1,16 +1,13 @@
-package com.base.gmailclone;
+package com.base.gmailclone.activities;
 
 import android.os.Bundle;
 import android.view.View;
 import android.widget.PopupMenu;
 import android.widget.Toast;
 
-import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 
+import com.base.gmailclone.R;
 import com.base.gmailclone.databinding.ActivityComposeBinding;
 
 public class ComposeActivity extends AppCompatActivity {
@@ -20,14 +17,8 @@ public class ComposeActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        EdgeToEdge.enable(this);
         binding = ActivityComposeBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
-            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
-            return insets;
-        });
 
         binding.buttonCc.setOnClickListener(v -> {
             binding.buttonCc.setVisibility(View.GONE);
@@ -90,19 +81,19 @@ public class ComposeActivity extends AppCompatActivity {
 
                 if (itemId == R.id.option1) {
                     // Handle "Option 1" click
-                    Toast.makeText(this, "Option 1 clicked", Toast.LENGTH_SHORT).show();
+//                    Toast.makeText(this, "Option 1 clicked", Toast.LENGTH_SHORT).show();
                     return true;
                 } else if (itemId == R.id.option2) {
                     // Handle "Option 2" click
-                    Toast.makeText(this, "Option 2 clicked", Toast.LENGTH_SHORT).show();
+//                    Toast.makeText(this, "Option 2 clicked", Toast.LENGTH_SHORT).show();
                     return true;
                 } else if (itemId == R.id.option3) {
                     // Handle "Option 3" click
-                    Toast.makeText(this, "Option 3 clicked", Toast.LENGTH_SHORT).show();
+//                    Toast.makeText(this, "Option 3 clicked", Toast.LENGTH_SHORT).show();
                     return true;
                 } else if (itemId == R.id.option4) {
                     // Handle "Option 3" click
-                    Toast.makeText(this, "Option 4 clicked", Toast.LENGTH_SHORT).show();
+//                    Toast.makeText(this, "Option 4 clicked", Toast.LENGTH_SHORT).show();
                     return true;
                 } else {
                     return false;

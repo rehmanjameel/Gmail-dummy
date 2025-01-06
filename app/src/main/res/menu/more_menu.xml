@@ -3,9 +3,11 @@
     <item
         android:id="@+id/option1"
         android:title="Normal" />
+
     <item
         android:id="@+id/option2"
         android:title="Plain Text" />
+
     <item
         android:id="@+id/option3"
         android:title="Attach Public Key" />

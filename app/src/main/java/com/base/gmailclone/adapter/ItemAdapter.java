@@ -10,7 +10,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.base.gmailclone.DetailsAcitivity;
+import com.base.gmailclone.activities.DetailsAcitivity;
 import com.base.gmailclone.R;
 import com.base.gmailclone.model.ItemModel;
 

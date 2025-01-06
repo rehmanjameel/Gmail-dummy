@@ -9,8 +9,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.base.gmailclone.ComposeActivity;
-import com.base.gmailclone.R;
+import com.base.gmailclone.activities.ComposeActivity;
 import com.base.gmailclone.databinding.FragmentBinBinding;
 
 
