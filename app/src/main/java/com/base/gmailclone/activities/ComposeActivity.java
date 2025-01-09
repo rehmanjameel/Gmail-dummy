@@ -10,12 +10,14 @@ import android.view.WindowManager;
 import android.widget.CheckBox;
 import android.widget.PopupMenu;
 import android.widget.RadioButton;
+import android.widget.Spinner;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
 
 import com.base.gmailclone.R;
+import com.base.gmailclone.adapter.ImageSpinnerAdapter;
 import com.base.gmailclone.databinding.ActivityComposeBinding;
 
 public class ComposeActivity extends AppCompatActivity {
@@ -136,5 +138,26 @@ public class ComposeActivity extends AppCompatActivity {
             // Dismiss the dialog when clicking outside
             dialog.setCanceledOnTouchOutside(true);
         });
+
+        // Array of image resources
+        int[] images = {
+                R.drawable.baseline_format_list_numbered_24,
+                R.drawable.list_alpha,
+        };
+
+        int[] imagesDots = {
+                R.drawable.baseline_format_list_bulleted_24,
+                R.drawable.list_cirlce,
+                R.drawable.list_square,
+        };
+
+        Spinner spinner = findViewById(R.id.spinner);
+
+        // Set custom adapter
+        ImageSpinnerAdapter adapter = new ImageSpinnerAdapter(this, images);
+        binding.spinner.setAdapter(adapter);
+
+        ImageSpinnerAdapter adapter1 = new ImageSpinnerAdapter(this, imagesDots);
+        binding.spinner1.setAdapter(adapter1);
     }
 }
