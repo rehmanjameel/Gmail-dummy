@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/white">
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/normal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Normal"
+            android:layoutDirection="rtl"/>
+
+        <RadioButton
+            android:id="@+id/plainTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Plain Text"
+            android:layoutDirection="rtl"/>
+
+    </RadioGroup>
+
+    <View
+        android:layout_width="300dp"
+        android:layout_height="1dp"
+        android:background="@color/grey"
+        />
+
+    <CheckBox
+        android:id="@+id/attachPK"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Attach Public Key"
+        android:layoutDirection="rtl"/>
+
+    <CheckBox
+        android:id="@+id/requestRR"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Request Read receipt"
+        android:layoutDirection="rtl"/>
+
+<!--    <LinearLayout-->
+<!--        android:id="@+id/option1"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="horizontal"-->
+<!--        android:padding="8dp"-->
+<!--        android:clickable="true"-->
+<!--        android:focusable="true">-->
+<!--        <RadioButton-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Normal"-->
+<!--            android:layoutDirection="rtl"/>-->
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Option 1"-->
+<!--            android:paddingStart="8dp"-->
+<!--            android:textSize="16sp" />-->
+
+<!--    </LinearLayout>-->
+
+    <!-- Repeat for other options -->
+</LinearLayout>

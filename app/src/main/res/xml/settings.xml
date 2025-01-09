@@ -2,64 +2,68 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <PreferenceCategory
-        android:title="">
-        <!-- Switch Preference for App Theme -->
-        <SwitchPreferenceCompat
-            android:key="theme_switch"
-            android:title="Theme"
-            android:summary="Switch between light and dark themes"
-            app:icon="@drawable/baseline_light_mode_24"/>
+<!--    <PreferenceCategory-->
+<!--        android:title="">-->
 
-    </PreferenceCategory>
+<!--    </PreferenceCategory>-->
+    <!-- Switch Preference for App Theme -->
+    <SwitchPreferenceCompat
+        android:key="theme_switch"
+        android:title="Theme"
+        android:summary="Switch between light and dark themes"
+        app:icon="@drawable/baseline_light_mode_24"/>
 
-    <PreferenceCategory
-        android:title="">
+<!--    <PreferenceCategory-->
+<!--        android:title="">-->
 
-        <!-- EditText Preference for User Name -->
-        <EditTextPreference
-            android:key="user_name"
-            android:title="General"
-            android:summary="Display Name"
-            android:dialogTitle="Enter your name"
-            android:inputType="text"
-            app:icon="@drawable/baseline_drive_file_rename_outline_24"/>
-    </PreferenceCategory>
+<!--    </PreferenceCategory>-->
+    <!-- EditText Preference for User Name -->
+    <EditTextPreference
+        android:key="user_name"
+        android:title="General"
+        android:summary="Display Name"
+        android:dialogTitle="Enter your name"
+        android:inputType="text"
+        app:allowDividerAbove="true"
+        app:icon="@drawable/baseline_drive_file_rename_outline_24"/>
 
-    <PreferenceCategory
-        android:title="">
+<!--    <PreferenceCategory-->
+<!--        android:title="">-->
 
-        <!-- Clickable Preference with Forward Icon -->
-        <Preference
-            android:key="encryption"
-            android:title="Encryption"
-            android:summary="Encryption &amp; Keys"
-            android:widgetLayout="@layout/preference_forward_icon"
-            app:icon="@drawable/baseline_key_24"/>
-    </PreferenceCategory>
+<!--    </PreferenceCategory>-->
+    <!-- Clickable Preference with Forward Icon -->
+    <Preference
+        android:key="encryption"
+        android:title="Encryption"
+        android:summary="Encryption &amp; Keys"
+        android:widgetLayout="@layout/preference_forward_icon"
+        app:allowDividerAbove="true"
+        app:icon="@drawable/baseline_key_24"/>
 
-    <PreferenceCategory
-        android:title="">
+<!--    <PreferenceCategory-->
+<!--        android:title="">-->
 
-        <!-- Another Switch Preference -->
-        <SwitchPreferenceCompat
-            android:key="notifications_switch"
-            android:title="Security"
-            android:summary="2 Factor Authorization"
-            app:icon="@drawable/baseline_security_24"/>
-    </PreferenceCategory>
+<!--    </PreferenceCategory>-->
+    <!-- Another Switch Preference -->
+    <SwitchPreferenceCompat
+        android:key="notifications_switch"
+        android:title="Security"
+        android:summary="2 Factor Authorization"
+        app:allowDividerAbove="true"
+        app:icon="@drawable/baseline_security_24"/>
 
-    <PreferenceCategory
-        android:title="">
+<!--    <PreferenceCategory-->
+<!--        android:title="">-->
 
-        <!-- Simple Preference to Open Another Screen -->
-        <Preference
-            android:key="account"
-            android:title="Account"
-            android:summary="View Profile information"
-            android:widgetLayout="@layout/preference_forward_icon"
-            app:icon="@drawable/baseline_account_circle_24"
-            />
-    </PreferenceCategory>
+<!--    </PreferenceCategory>-->
+    <!-- Simple Preference to Open Another Screen -->
+    <Preference
+        android:key="account"
+        android:title="Account"
+        android:summary="View Profile information"
+        android:widgetLayout="@layout/preference_forward_icon"
+        app:allowDividerAbove="true"
+        app:icon="@drawable/baseline_account_circle_24"
+        />
 
 </PreferenceScreen>

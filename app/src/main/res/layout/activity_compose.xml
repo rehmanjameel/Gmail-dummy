@@ -36,6 +36,7 @@
             android:layout_centerVertical="true"
             android:layout_marginEnd="10dp"
             android:layout_toEndOf="@id/title"
+            android:visibility="gone"
             android:src="@drawable/baseline_remove_24" />
 
         <ImageView
@@ -188,6 +189,117 @@
                 android:background="?attr/selectableItemBackground"
                 android:padding="10dp"
                 android:src="@drawable/baseline_more_horiz_24" />
+
+            <LinearLayout
+                android:id="@+id/boldLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <ImageButton
+                    android:id="@+id/bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/selectableItemBackground"
+                    android:padding="5dp"
+                    android:src="@drawable/baseline_format_bold_24" />
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/selectableItemBackground"
+                    android:padding="5dp"
+                    android:src="@drawable/baseline_format_italic_24" />
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/selectableItemBackground"
+                    android:padding="5dp"
+                    android:src="@drawable/baseline_format_underlined_24" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/alignmentImagesLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackground"
+                android:padding="5dp"
+                android:src="@drawable/baseline_strikethrough_s_24" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackground"
+                android:padding="5dp"
+                android:src="@drawable/baseline_format_align_left_24" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackground"
+                android:padding="5dp"
+                android:src="@drawable/baseline_format_align_center_24" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackground"
+                android:padding="5dp"
+                android:src="@drawable/baseline_format_align_right_24" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackground"
+                android:padding="5dp"
+                android:src="@drawable/baseline_format_align_justify_24" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackground"
+                android:padding="5dp"
+                android:src="@drawable/baseline_format_list_bulleted_24" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackground"
+                android:padding="5dp"
+                android:src="@drawable/baseline_format_list_numbered_24" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackground"
+                android:padding="5dp"
+                android:src="@drawable/baseline_format_indent_increase_24" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackground"
+                android:padding="5dp"
+                android:src="@drawable/baseline_format_indent_decrease_24" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackground"
+                android:padding="5dp"
+                android:src="@drawable/baseline_format_clear_24" />
+
         </LinearLayout>
 
         <!-- Content Field -->

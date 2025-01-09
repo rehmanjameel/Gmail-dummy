@@ -3,7 +3,9 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="horizontal"
-    android:padding="16dp">
+    android:layout_marginStart="10dp"
+    android:layout_marginEnd="10dp"
+    android:layout_marginBottom="10dp">
 
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/item_image"
@@ -18,7 +20,7 @@
         android:id="@+id/item_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="18sp"
+        android:textSize="16sp"
         android:text="Title"
         android:textStyle="bold"
         android:paddingTop="8dp"
@@ -30,8 +32,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="19:05 pm"
-        android:textSize="14sp"
-        android:paddingTop="4dp"
+        android:textSize="13sp"
+        android:paddingTop="8dp"
         android:layout_marginEnd="10dp"
         android:layout_alignParentEnd="true"/>
 
@@ -40,7 +42,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Your recent Amazon order - Thank you for your purchase! Your order is currently being processed and will be..."
-        android:textSize="16sp"
+        android:textSize="14sp"
         android:paddingTop="8dp"
         android:ellipsize="end"
         android:maxLines="2"
